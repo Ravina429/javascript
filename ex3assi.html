@@ -1,0 +1,27 @@
+<!-- wap to accept radius of a circle and then print area and circ of a circle -->
+
+<html>
+    <head>
+        <script>
+            function msg(){
+                var r,a,c;
+                r = parseInt(document.f1.n1.value);
+               a = 3.14*r*r;
+               c =2*3.14*r;
+               alert("Area="+ a);
+               alert("Circumference="+ c);
+                }
+        </script>
+    </head>
+    <body>
+        <h1>Ravina Ki study</h1>
+        <hr>
+        <form name="f1" style="width:50%">
+            <fieldset>
+                <legend>Area & Circumference</legend>
+                enter radius<input type="text" name="n1"/>
+                <input type="button" value="click" onclick="msg();"/>
+             </fieldset>
+         </form>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!-- wap to accept length and breadth and then display area -->
+
+<html>
+    <head>
+        <script>
+            function msg(){
+                var a,b,area;
+                a = parseInt(document.f1.n1.value);
+        b = parseInt(document.f1.n2.value);
+        area=a*b;
+        alert("area="+ area);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Ravina ki study</h1>
+        <hr>
+        <form name="f1" style="width:50%">
+            <fieldset>
+                <legend>Area</legend>
+                enter lenght <input type="text" name="n1" /> <br>
+        enter breadth<input type="text"name="n2"/><br>
+        <input type="button" value="click" onclick="msg();"/>
+            </fieldset> 
+        </form>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!-- wap to accept 3 numbers and display addtion of 3 numbers -->
+
+<html>
+  <head>
+    <script>
+      function msg() {
+        var num1, num2, num3, result;
+        num1 = parseInt(document.f1.n1.value);
+        num2 = parseInt(document.f1.n2.value);
+        num3 = parseInt(document.f1.n3.value);
+        result = num1 + num2 + num3;
+        alert("addition="+result);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Ravina</h1>
+    <hr />
+    <form name="f1" style="width: 50%">
+      <fieldset>
+        <legend>Addition</legend>
+        enter number 1<input type="text" name="n1" /> <br>
+        enter number 2<input type="text"name="n2"/><br>
+        enter number 3<input type="text" name="n3" /><br>
+        <input type="button" value="click" onclick="msg();" />
+      </fieldset>
+    </form>
+  </body>
+</html>
