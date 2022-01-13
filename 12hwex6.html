@@ -1,0 +1,38 @@
+<!-- 6- wap to accept age from the user and display whether he is eligible to vote or not. -->
+
+html>
+  <head>
+    <script>
+      function hi() {
+        var age, result;
+        age = parseFloat(document.f1.n1.value);
+        
+        if (age >= 17) 
+        {
+          result = 'It is Eligible';
+        } 
+         else 
+        {
+          result =' It is not Eligible';
+        }
+        document.getElementById("r1").innerHTML = result;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Ravina.N.W</h1>
+    <hr />
+    <center>
+      <form name="f1" style="width: 50%">
+        <fieldset>
+          <legend>calculation</legend>
+          enter number 1 <input type="text" name="n1" /> <br /><br />
+          <input type="button" value="result" onclick="hi();" />
+          <br /><br />
+          result : <span id="r1" name="res"></span>
+        </fieldset>
+      </form>
+    </center>
+  </body>
+</html>

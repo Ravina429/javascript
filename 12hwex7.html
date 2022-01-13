@@ -1,0 +1,51 @@
+<!-- 7 -wap to accept 3 subject marks and display total, percentage and grade. -->
+
+<html>
+  <head>
+    <script>
+      function msg() {
+        var m1, m2, m3, total, per, grade;
+        m1 = parseFloat(document.f1.n1.value);
+        m2 = parseFloat(document.f1.n2.value);
+        m3 = parseFloat(document.f1.n3.value);
+
+        total = m1 + m2 + m3;
+        document.getElementById("r1").innerHTML = total;
+        per = ((m1 + m2 + m3) / 300) * 100;
+        document.getElementById("r2").innerHTML = per;
+        if (per >= 75) {
+          grade = "Grade A";
+        } else if (per >= 60) {
+          grade = "Grade B";
+        } else if (per >= 35) {
+          grade = "Grade C";
+        } else {
+          grade = "Fail";
+        }
+
+        document.getElementById("r3").innerHTML = grade;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 align="center">Ravina</h1>
+    <hr />
+    <center>
+      <form name="f1" style="width: 50%">
+        <fieldset>
+          <legend>Result</legend>
+          enter Marks 1 <input type="text" name="n1" /> <br /><br />
+          enter Marks 2 <input type="text" name="n2" /> <br /><br />
+          enter Marks 3 <input type="text" name="n3" /> <br /><br />
+
+          <input type="button" value="result" onclick="msg();" />
+          <br /><br />
+          Total : <span id="r1" name="res"></span><br />
+          Percentage: <span id="r2" name="res"></span><br />
+          Grade : <span id="r3" name="res"></span><br />
+        </fieldset>
+      </form>
+    </center>
+  </body>
+</html>

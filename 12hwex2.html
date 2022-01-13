@@ -1,0 +1,41 @@
+<!-- 2- wap to accept 3 numbers and display the greatest number -->
+
+<html>
+  <head>
+    <script>
+      function hi() {
+        var num1, num2, num3, result;
+        num1 = parseFloat(document.f1.n1.value);
+        num2 = parseFloat(document.f1.n2.value);
+        num3 = parseFloat(document.f1.n3.value);
+
+        if (num1 > num2 && num1 > num3) {
+          result = num1;
+        } else if (num2 > num1 && num2 > num3) {
+          result = num2;
+        } else {
+          result = num3;
+        }
+        document.getElementById("r1").innerHTML = result;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Ravina.N.W</h1>
+    <hr />
+    <center>
+      <form name="f1" style="width: 50%">
+        <fieldset>
+          <legend>calculation</legend>
+          enter number 1 <input type="text" name="n1" /> <br /><br />
+          enter number 2 <input type="text" name="n2" /> <br /><br />
+          enter number 3 <input type="text" name="n3" /> <br /><br />
+          <input type="button" value="result" onclick="hi();" />
+          <br /><br />
+          result : <span id="r1" name="res"></span>
+        </fieldset>
+      </form>
+    </center>
+  </body>
+</html>
