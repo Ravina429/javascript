@@ -1,0 +1,33 @@
+<!-- assignment : wap to accept a number and print factorial using do while loop. -->
+<html>
+    <head>
+        <script>
+            function msg(){
+                var num,fact=1;
+                num=parseInt(document.f1.n1.value);
+                var i=num;
+                do{
+                    fact=fact*i;
+                    i--;
+                }
+                while(i>0)
+                document.getElementById("r1").innerHTML=fact;
+            }
+        </script>
+    </head>
+    <body>
+    <h1>Ravina</h1>
+    <hr>
+    <center>
+        <form name="f1" style="width:50%">
+            <fieldset>
+                <legend>find factor</legend>
+                enter num : <input type="text" name="n1"/><br><br>
+                <input type="button" value="click" onclick="msg();"/>
+                result :<span id="r1" name="res"></span>
+            </fieldset>
+        
+        </form>
+    </center>
+    </body>
+</html>
