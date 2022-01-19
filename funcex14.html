@@ -1,0 +1,32 @@
+<html>
+  <script>
+    function getresult(m1, m2, m3) {
+      var emp = new Object();
+      emp.id = m1;
+      emp.name = m2;
+      emp.salary = m3;
+      document.getElementById("n1").innerHTML = emp.id;
+      document.getElementById("n2").innerHTML = emp.name;
+      document.getElementById("n3").innerHTML = emp.salary;
+    }
+  </script>
+  <body>
+    <center>
+      <h1>Ravina</h1>
+      <form name="f1">
+        enter emp id:<input type="text" name="t1" /><br /><br />
+        enter emp name:<input type="text" name="t2" /><br /><br />
+        enter emp salary:<input type="text" name="t3" /><br /><br />
+        <input
+          type="button"
+          value="click"
+          onclick="getresult(document.f1.t1.value,document.f1.t2.value,document.f1.t3.value)"
+        />
+        <br /><br />
+        emp id: <span id="n1"></span><br /><br />
+        emp name: <span id="n2"></span><br /><br />
+        emp salary: <span id="n3"></span><br /><br />
+      </form>
+    </center>
+  </body>
+</html>

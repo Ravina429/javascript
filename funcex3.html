@@ -1,0 +1,21 @@
+<!-- example of accepting value from the user and passing to function -->
+
+<html>
+    <head>
+        <script>
+            function getcube(number){
+                alert(number*number*number);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>ravina</h1>
+        <hr>
+        <center>
+            <form name="f1">
+                enter number :<input type="text" name="n1" style="width:10%"/><br><br>
+                <input type="button" value="click" onclick="getcube(document.f1.n1.value);"
+            </form>
+        </center>
+    </body>
+</html>
