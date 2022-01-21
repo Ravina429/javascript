@@ -1,0 +1,17 @@
+<!-- In this example, we going to count total number of genders. Here, we are using getElementsByName() method to get all the genders. -->
+
+<html>
+    <script>
+        function getgender(){
+            var allgenders=document.getElementsByName("gender");
+            alert("Total Genders:"+allgenders.length);
+        }
+    </script>
+    <form>
+        Male:<input type="radio" name="gender" value="male";/>
+        Female:<input type="radio" name="gender" value="female";/>
+         
+        <input type="button"  value="print " onclick="getgender();"/>
+
+    </form>
+</html>

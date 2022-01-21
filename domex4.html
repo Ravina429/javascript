@@ -1,0 +1,14 @@
+<!-- In this example, we going to count total number of paragraphs used in the document. To do this, we have called the document.getElementsByTagName("p") method that returns the total paragraphs. -->
+
+<html>
+    <script>
+        function getpara(){
+            var totalpara=document.getElementsByTagName("p");
+            alert("total para are:"+totalpara.length);
+}
+    </script>
+    <p>India is my country</p>
+<p>All indians are my brother and sisters</p>
+<p>All males in india are my brother except my husband</p>
+<button onclick="getpara()">count paragraph</button>  
+</html>
