@@ -1,0 +1,28 @@
+<!-- we are validating the form on form submit. The user will not be forwarded to the next page until given values are correct. -->
+
+<html>
+    <script>
+        function validateform(){
+            var name=document.f1.n1.value;
+            var password=document.f1.n2.value;
+            if(name==null || name=="")
+            {
+                alert("Name can't be blank");
+                return false;
+            }
+            else if(password.length<6)
+            {
+                alert("password must be atleast 6 characters long.");
+                return false;
+            }
+        }
+    </script>
+    <body>
+        <form name="f1" method="post" action ="abc.jsp" onsubmit="validateform()">
+            Name: <input type="text" name="n1"><br/>
+            Password: <input type="password" name="n2"><br/>
+            <input type="submit" value="register">
+
+        </form>
+    </body>
+</html>

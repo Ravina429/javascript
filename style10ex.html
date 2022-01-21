@@ -1,0 +1,14 @@
+<html>
+<body>
+
+<h2>JavaScript HTML Events</h2>
+Enter Your Name<input type="text" id="f1" onchange="uppercase()">
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+<script>
+    function uppercase(){
+        const x=document.getElementById("f1");
+        x.value=x.value.toUpperCase();
+    }
+</script>
+</body>
+</html>
